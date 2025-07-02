@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio - Web Developer & Software Engineer">
+    <meta name="keywords" content="web developer, portfolio, software engineer, HTML, CSS, JavaScript">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Your Name - Portfolio">
+    <meta property="og:description" content="Personal Portfolio - Web Developer & Software Engineer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/portfolio-website">
+    
+    <title>Raf - Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">RAF</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span id="typing-text"></span><span class="cursor">|</span>
+                </h1>
+                <p class="hero-subtitle">Full Stack Software Developer</p>
+                <p class="hero-description">
+                    I create applications using modern technologies.
+                    Passionate about clean code, user experience, and solving complex problems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="assets\JRMendegorin_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View My CV</a>
+                    <div class="social-links">
+                        <a href="https://github.com/ThatOneLeaf" target="_blank" class="social-btn">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rafael-mendegorin/" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images\profile\hero.JPG" alt="Your Name" class="profile-img">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>The Story So Far</h3>
+                    <p>
+                        I've always had a knack for breaking down complex systems into manageable pieces. This natural ability to see the bigger picture while understanding the intricate details led me to pursue Computer Science at Mapúa MCL. What excites me most isn't just writing code – it's the thrill of finding unconventional solutions to tricky problems.
+                    </p>
+                    <p>
+                        I've found my sweet spot in full-stack development, where I can juggle between crafting intuitive user interfaces and optimizing backend systems. When I'm not coding, you'll find me exploring new tech stacks or playing games that utilize my critical thinking. I believe what sets me apart is my ability to see beyond the immediate problem – I'm always thinking about scalability, user experience, and how my code fits into the bigger picture.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="images\profile\about.JPG" alt="About Me" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-content">
+                <div class="tech-icons-grid">
+                    <!-- Frontend Technologies -->
+                    <div class="tech-icon">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    
+                    <!-- Backend Technologies -->
+                    <div class="tech-icon">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-icon">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="tech-svg">
+                            <path d="M10.773 2.878c-.013 1.434.322 4.624.445 5.734l-8.558 3.83c-.56-.959-.98-2.304-1.237-3.38l-.06.027c-.205.09-.406.053-.494-.088l-.011-.018-.82-1.506c-.058-.105-.05-.252.024-.392a.78.78 0 0 1 .358-.331l9.824-4.207c.146-.064.299-.063.4.004.106.062.127.128.13.327Zm.68 7c.523 1.97.675 2.412.832 2.818l-7.263 3.7a19.35 19.35 0 0 1-1.81-2.83l8.24-3.689Zm12.432 8.786h.003c.283.402-.047.657-.153.698l-.947.37c.037.125.035.319-.217.414l-.736.287c-.229.09-.398-.059-.42-.2l-.025-.125c-4.427 1.784-7.94 1.685-10.696.647-1.981-.745-3.576-1.983-4.846-3.379l6.948-3.54c.721 1.431 1.586 2.454 2.509 3.178 2.086 1.638 4.415 1.712 5.793 1.563l-.047-.233c-.015-.077.007-.135.086-.165l.734-.288a.302.302 0 0 1 .342.086l.748-.288a.306.306 0 0 1 .341.086l.583.89Z" fill="#3BABC3"/>
+                        </svg>
+                        <span>Flask</span>
+                    </div>
+                    <div class="tech-icon">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="tech-svg">
+                            <path d="M12 .0387C5.3729.0384.0003 5.3931 0 11.9988c-.001 6.6066 5.372 11.9628 12 11.9625 6.628.0003 12.001-5.3559 12-11.9625-.0003-6.6057-5.3729-11.9604-12-11.96m-.829 5.4153h7.55l-7.5805 5.3284h5.1828L5.279 18.5436q2.9466-6.5444 5.892-13.0896" fill="#009688"/>
+                        </svg>
+                        <span>FastAPI</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    
+                    <!-- Tools & Other -->
+                    <div class="tech-icon">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tech-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64" class="tech-svg">
+                            <linearGradient id="dFMIpH0DLBLP_Mye2ctJMa_Fycm8TUhWmFU_gr1" x1="15.25" x2="15.25" y1="31.296" y2="15.385" gradientTransform="matrix(1 0 0 -1 0 64)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8ab4ff"></stop><stop offset=".699" stop-color="#e492ff"></stop></linearGradient><path fill="url(#dFMIpH0DLBLP_Mye2ctJMa_Fycm8TUhWmFU_gr1)" d="M19.09,39.37c0,0.01,0.01,0.01,0.01,0.02l-7.7,4.5L19.09,39.37z"></path><linearGradient id="dFMIpH0DLBLP_Mye2ctJMb_Fycm8TUhWmFU_gr2" x1="15.25" x2="15.25" y1="33.329" y2="20.11" gradientTransform="matrix(1 0 0 -1 0 64)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8ab4ff"></stop><stop offset=".699" stop-color="#e492ff"></stop></linearGradient><path fill="url(#dFMIpH0DLBLP_Mye2ctJMb_Fycm8TUhWmFU_gr2)" d="M19.09,39.37c0,0.01,0.01,0.01,0.01,0.02	l-7.7,4.5L19.09,39.37z"></path><linearGradient id="dFMIpH0DLBLP_Mye2ctJMc_Fycm8TUhWmFU_gr3" x1="31.87" x2="31.87" y1="10.7" y2="35.152" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8ab4ff"></stop><stop offset="1" stop-color="#e492ff"></stop></linearGradient><path fill="url(#dFMIpH0DLBLP_Mye2ctJMc_Fycm8TUhWmFU_gr3)" d="M32,8.21l-20.6,11.9v23.78l7.69-4.52	c-1.18-2.17-1.85-4.65-1.85-7.3c0-2.88,0.8-5.56,2.18-7.87c2.68-4.46,7.57-7.46,13.15-7.46c5.27,0,10.11,2.67,12.94,7.12l-0.39,0.24	l-6.57,3.87c-1.35-1.99-3.57-3.16-5.98-3.16c-2.62,0-4.91,1.39-6.19,3.47c-0.68,1.11-1.07,2.4-1.07,3.79c0,1.16,0.27,2.25,0.75,3.22	l6.13-3.6h0.01l0.04,0.02l20.1-11.75L32,8.21z"></path><linearGradient id="dFMIpH0DLBLP_Mye2ctJMd_Fycm8TUhWmFU_gr4" x1="32" x2="32" y1="8.058" y2="57.784" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1a6dff"></stop><stop offset="1" stop-color="#c822ff"></stop></linearGradient><path fill="url(#dFMIpH0DLBLP_Mye2ctJMd_Fycm8TUhWmFU_gr4)" d="M32.24,31.71l-6.17,3.6	c1.19,2.38,3.66,4.02,6.5,4.02c2.382,0,4.553-1.156,5.911-3.063l7.076,3.931C42.76,44.666,37.897,47.4,32.57,47.4	c-5.8,0-10.87-3.24-13.47-8.01l-7.7,4.5L32,55.79l20.6-11.9v-0.22V20.11l-0.26-0.15L32.24,31.71z M51,31h-2v2h2v2h-2v2h-2v-2h-2v2	h-2v-2h-2v-2h2v-2h-2v-2h2v-2h2v2h2v-2h2v2h2V31z M45,31h2v2h-2V31z M55.1,16.93L33.5,4.46c-0.93-0.53-2.07-0.53-3,0L8.9,16.93	c-0.92,0.54-1.5,1.53-1.5,2.6v24.94c0,1.07,0.58,2.06,1.5,2.6l21.6,12.47c0.93,0.53,2.07,0.53,3,0l21.6-12.47	c0.92-0.54,1.5-1.53,1.5-2.6V19.53C56.6,18.46,56.02,17.47,55.1,16.93z M54.6,44.47c0,0.36-0.19,0.69-0.5,0.87L32.5,57.81	c-0.31,0.17-0.69,0.17-1,0L9.9,45.34c-0.31-0.18-0.5-0.51-0.5-0.87V19.53c0-0.36,0.19-0.69,0.5-0.87L31.5,6.19	c0.31-0.17,0.69-0.17,1,0l21.6,12.47c0.31,0.18,0.5,0.51,0.5,0.87V44.47z"></path>
+                        </svg>
+                        <span>C#</span>
+                    </div>
+                    <div class="tech-icon">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="tech-svg">
+                            <path d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z" fill="#512BD4"/>
+                        </svg>
+                        <span>.NET</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Here are some of my recent works</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="carousel">
+                            <div class="carousel-container">
+                                <img src="images\projects\ir\collection.png" alt="Collections" class="carousel-item active">
+                                <img src="images\projects\ir\overalldash.png" alt="Research Analytics" class="carousel-item">
+                                <img src="images\projects\ir\sdgimpactdash.png" alt="Research Analytics2" class="carousel-item">
+                                <img src="images\projects\ir\overallsdg.png" alt="Knowledge Graph" class="carousel-item">
+                                <img src="images\projects\ir\researchareasdg.png" alt="Knowledge Graph2" class="carousel-item">
+                            </div>
+                            <button class="carousel-button prev" onclick="moveCarousel(this, -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-button next" onclick="moveCarousel(this, 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <div class="carousel-dots">
+                                <span class="dot active" onclick="jumpToSlide(this, 0)"></span>
+                                <span class="dot" onclick="jumpToSlide(this, 1)"></span>
+                                <span class="dot" onclick="jumpToSlide(this, 2)"></span>
+                                <span class="dot" onclick="jumpToSlide(this, 3)"></span>
+                                <span class="dot" onclick="jumpToSlide(this, 4)"></span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h4>MMCL Research Repository</h4>
+                                <p>A centralized hub for managing and analyzing academic research papers, featuring advanced analytics and knowledge graph visualization.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Institutional Research Repository</h3>
+                        <p class="project-description">
+                            A comprehensive platform for Mapúa MCL researchers to gather, store, analyze, and share research data. Features include interactive data visualization with Dash and Plotly, natural language processing for text analysis, and robust research paper management. The system enhances collaboration and streamlines research workflows across the academic community.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">SQLAlchemy</span>
+                            <span class="tag">Dash</span>
+                            <span class="tag">NLTK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="carousel">
+                            <div class="carousel-container">
+                                <img src="images\projects\esg_dash\Login.png" alt="Login" class="carousel-item active">
+                                <img src="images\projects\esg_dash\Dashboard.png" alt="Dashboard" class="carousel-item">
+                                <img src="images\projects\esg_dash\EconDashboard.png" alt="Econ Dashboard" class="carousel-item">
+                            </div>
+                            <button class="carousel-button prev" onclick="moveCarousel(this, -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-button next" onclick="moveCarousel(this, 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <div class="carousel-dots">
+                                <span class="dot active" onclick="jumpToSlide(this, 0)"></span>
+                                <span class="dot" onclick="jumpToSlide(this, 1)"></span>
+                                <span class="dot" onclick="jumpToSlide(this, 2)"></span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h4>ESG Dashboard (ESG Dash)</h4>
+                                <p>A comprehensive ESG (Environmental, Social, and Governance) monitoring and reporting system for energy companies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ESG Performance Dashboard</h3>
+                        <p class="project-description">
+                            A full-stack dashboard application for tracking and visualizing environmental, social, and governance metrics. Features real-time monitoring, automated reporting, and data visualization tools.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Material-UI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="carousel">
+                            <div class="carousel-container">
+                                <img src="images\projects\pis\inventory.png" alt="Inventory Dashboard" class="carousel-item active">
+                                <img src="images\projects\pis\pr.png" alt="Procurement System" class="carousel-item">
+                                <img src="images\projects\pis\pricedynamicreport.png" alt="Inventory Reports" class="carousel-item">
+                            </div>
+                            <button class="carousel-button prev" onclick="moveCarousel(this, -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-button next" onclick="moveCarousel(this, 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <div class="carousel-dots">
+                                <span class="dot active" onclick="jumpToSlide(this, 0)"></span>
+                                <span class="dot" onclick="jumpToSlide(this, 1)"></span>
+                                <span class="dot" onclick="jumpToSlide(this, 2)"></span>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h4>Enterprise Inventory System</h4>
+                                <p>A Windows-based inventory and procurement management system with integrated communication features.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Procurement & Inventory Management</h3>
+                        <p class="project-description">
+                            A robust desktop application that streamlines the procurement workflow, from supply requests to purchase orders. Features include inventory tracking, integrated email notifications for request updates, and comprehensive reporting capabilities.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">.NET Framework</span>
+                            <span class="tag">WinForms</span>
+                            <span class="tag">SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer</h3>
+                        <h4>Open to Opportunities</h4>
+                        <span class="timeline-date">2025 - Future</span>
+                        <p>
+                            Currently looking for my next adventure! Looking to join a team where I can turn 
+                            coffee into code and transform complex problems into elegant solutions. My debugger and I are 
+                            ready for new challenges.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer Intern</h3>
+                        <h4>Petroenergy</h4>
+                        <span class="timeline-date">2025</span>
+                        <p>
+                            Contributed to ESG Dash, an ESG monitoring platform, as part of the development team. 
+                            Gained hands-on experience with React and FastAPI while implementing features for economic 
+                            metrics tracking and reporting modules.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Computer Science Student</h3>
+                        <h4>Mapúa Malayan Colleges Laguna</h4>
+                        <span class="timeline-date">2021 - 2025</span>
+                        <p>
+                            Pursuing BS Computer Science with a focus on web development. Developed multiple 
+                            institutional systems including the Institutional Repository platform. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Rafael Mendegorin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/form-handler.js"></script>
+</body>
+</html>
