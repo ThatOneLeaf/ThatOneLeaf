@@ -135,25 +135,24 @@ section {
     font-size: 1.125rem;
 }
 
-/* Navigation */
+/* Navbar styles */
 .navbar {
-    position: fixed;
-    top: 0;
     width: 100%;
+    height: 70px;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-color);
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1000;
-    transition: var(--transition);
 }
 
 .nav-container {
+    height: 100%;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .nav-logo a {
@@ -462,8 +461,14 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .project-card {
