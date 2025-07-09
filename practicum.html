@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practicum Experience - Software Development Intern">
+    <meta name="keywords" content="practicum, internship, software development, ESG dashboard">
+    <meta name="author" content="Raf">
+    
+    <title>Practicum Experience - ThatOneLeaf</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <style>
+        .practicum-section {
+            padding: 80px 0;
+            min-height: 100vh;
+        }
+
+        .practicum-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .practicum-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .practicum-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        .practicum-section p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        .report-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .report-button:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .practicum-nav {
+            background-color: var(--bg-color);
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .practicum-nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .back-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .back-link:hover {
+            color: var(--secondary-color);
+        }
+
+        .company-logo {
+            text-align: center;
+            margin: 20px 0 40px;
+        }
+
+        .company-logo-img {
+            max-width: 300px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .project-showcase {
+            margin: 40px 0;
+        }
+
+        @media (max-width: 768px) {
+            .practicum-content {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="practicum-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </div>
+    </nav>
+
+    <!-- Practicum Content -->
+    <section class="practicum-section">
+        <div class="container">
+            <div class="practicum-header">
+                <h1>My Practicum Experience</h1>
+                <p>PetroEnergy Resources Corporation (PERC) - Full Stack Development Intern</p>
+                <a href="assets/FinalReport_Mendegorin.pdf" target="_blank" download="FinalReport_Mendegorin.pdf" class="report-button">
+                    <i class="fas fa-file-pdf"></i>
+                    View Full Report
+                </a>
+            </div>
+
+            <div class="practicum-content">
+                <h2>Company Overview</h2>
+                <div class="company-logo">
+                    <img src="images/projects/esg_dash/petro_logo.jpg" alt="PetroEnergy Logo" class="company-logo-img">
+                </div>
+                <p>I interned at PetroEnergy Resources Corporation (PERC). They are a Philippine-based energy company with diversified operations in both renewable and conventional energy sectors. Through its various subsidiaries, PetroEnergy plays a key role in the country's power generation landscape, with investments in geothermal, solar, and wind energy projects. The company actively contributes to the nation's energy security while also promoting sustainable development.</p>
+
+                <h2>Nature of Assignments or Tasks Given</h2>
+                <p>During my internship, I was primarily responsible for developing the economic section of the ESG Dash system, an ESG (Environmental, Social, and Governance) dashboard platform. The project began with comprehensive data gathering, where I collected and analyzed economic ESG metrics and reporting requirements. I then handled the frontend development using React and Material-UI, creating intuitive interfaces for economic data input and visualization. The backend implementation utilized FastAPI, ensuring robust data processing and efficient API endpoints for economic indicators. I also integrated advanced data visualization libraries to create interactive charts and reports specifically for economic performance metrics. Throughout the project, I maintained detailed documentation and collaborated closely with stakeholders to ensure the economic module met their requirements.</p>
+
+                <div class="project-showcase">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="carousel">
+                                <div class="carousel-container">
+                                    <img src="images/projects/esg_dash/Login.png" alt="ESG Dashboard Login" class="carousel-item active">
+                                    <img src="images/projects/esg_dash/Dashboard.png" alt="ESG Dashboard Main" class="carousel-item">
+                                    <img src="images/projects/esg_dash/EconDashboard.png" alt="Economic Dashboard" class="carousel-item">
+                                </div>
+                                <button class="carousel-button prev" onclick="moveCarousel(this, -1)">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-button next" onclick="moveCarousel(this, 1)">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                                <div class="carousel-dots">
+                                    <span class="dot active" onclick="jumpToSlide(this, 0)"></span>
+                                    <span class="dot" onclick="jumpToSlide(this, 1)"></span>
+                                    <span class="dot" onclick="jumpToSlide(this, 2)"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Total Hours Rendered</h2>
+                <p>I rendered a total of 392 hours, distributed across four development phases. The first phase involved project setup and data familiarization, totaling 72 hours. This was followed by 112 hours spent on data modeling and system design, where key technical plans and visual prototypes were developed. The bulk of the internship, 152 hours, was dedicated to system development and implementation, including feature coding, integration, and testing. The remaining 56 hours were allocated to documentation and training, which included preparing guides, coordinating turnover, and supporting user orientation.</p>
+
+                <h2>Conclusion</h2>
+                <p>Overall, the practicum engagement was a highly valuable experience that bridged academic knowledge with real-world application. It provided me with hands-on exposure to software development cycles, from setup and design to deployment and training, totaling 392 hours of focused effort across four phases. This exposure has equipped me with the technical competencies, professional demeanor, and practical insights necessary for my future career in software engineering and development. The learnings and realizations gained instilled confidence and readiness to contribute effectively in dynamic workplace environments, ensuring that I am well-prepared for upcoming professional challenges.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Rafael Mendegorin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+</body>
+</html> 
